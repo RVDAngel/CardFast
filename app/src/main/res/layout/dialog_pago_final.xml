@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_rounded"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Logo o imagen superior -->
+    <ImageView
+        android:id="@+id/logo_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/descripcion_logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Número de celular Yape -->
+    <EditText
+        android:id="@+id/edit_celular_yape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_celular_yape"
+        android:inputType="phone"
+        android:backgroundTint="@color/purple_500"
+        android:drawableStart="@drawable/baseline_phone_24"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Código de aprobación -->
+    <EditText
+        android:id="@+id/edit_codigo_aprobacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_codigo_aprobacion"
+        android:inputType="number"
+        android:backgroundTint="@color/purple_500"
+        android:drawableStart="@drawable/baseline_qr_code_24"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Ayuda -->
+    <TextView
+        android:id="@+id/text_ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_ayuda"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Botón Yapear -->
+    <Button
+        android:id="@+id/btn_yapear"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/texto_yapear"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_rounded"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+</LinearLayout>

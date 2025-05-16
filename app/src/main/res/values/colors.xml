@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="iconWhite">#ffffff</color>
+    <color name="green_500">#4CAF50</color>
+
+    <!--<color name="primary">#180238</color>-->
+    <color name="primary">#8692F7</color>
+    <color name="secondary">#FF03DAC5</color>
+
+    <color name="night_mode">#612481</color>
+    <color name="notifications">#1382C3</color>
+    <color name="private_account">#E6A326</color>
+    <color name="security">#D95F69</color>
+
+    <!-- Otros colores -->
+    <color name="gray">#9E9E9E</color>
+    <color name="gray_dark">#616161</color>
+
+    <!-- Color para textos y íconos -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+
+    <color name="colorPrimary">#1976D2</color>         <!-- Azul principal -->
+    <color name="colorPrimaryDark">#0D47A1</color>     <!-- Texto en tabs no seleccionados -->
+    <color name="colorAccent">#FF5722</color>          <!-- Indicador y texto seleccionado -->
+</resources>

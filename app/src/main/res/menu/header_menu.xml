@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_inicio"
+            android:icon="@drawable/baseline_home_24"/>
+        <item
+            android:id="@+id/nav_card"
+            android:title="@string/menu_tarjetas"
+            android:icon="@drawable/baseline_manager_card_24"/>
+        <item
+            android:id="@+id/nav_maps"
+            android:title="@string/menu_ubicaciones"
+            android:icon="@drawable/baseline_location_on_24"/>
+        <item
+            android:id="@+id/nav_history"
+            android:title="@string/menu_mis_recargas"
+            android:icon="@drawable/baseline_view_list_24"/>
+    </group>
+
+
+
+
+    <item android:title="@string/menu_comunicar">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="@string/menu_compartir"
+                    android:icon="@drawable/baseline_share_24"/>
+                <item
+                    android:id="@+id/nav_rate"
+                    android:title="@string/menu_calificar"
+                    android:icon="@drawable/baseline_rate_review_24"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/menu_perfil_titulo">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="@string/menu_perfil"
+                    android:icon="@drawable/baseline_manage_profile_24"/>
+                <item
+                    android:id="@+id/nav_about"
+                    android:title="@string/menu_acerca_de"
+                    android:icon="@drawable/about_us_icon"/>
+            </group>
+        </menu>
+
+    </item>
+
+
+</menu>

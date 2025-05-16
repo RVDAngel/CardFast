@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_rounded"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/text_saldo_actual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_saldo_actual"
+        android:textSize="16sp"
+        style="@style/TEXT"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/edit_monto_recarga"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/hint_monto_recarga"
+        android:inputType="numberDecimal"
+        android:backgroundTint="@color/purple_500"
+        android:drawableStart="@drawable/ic_money"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/grupo_metodo_pago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radio_yape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TEXT"
+            android:text="@string/texto_yape"
+            android:checked="true" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_continuar_pago"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/texto_continuar_pago"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_rounded"
+        android:drawableStart="@drawable/right_arrow_icon"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+</LinearLayout>

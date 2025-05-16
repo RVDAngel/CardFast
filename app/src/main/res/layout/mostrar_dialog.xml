@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_rounded"
+    style="@style/SCREEN"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TEXT"
+            android:hint="@string/hint_nombre_tarjeta" />
+
+        <EditText
+            android:id="@+id/editCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TEXT"
+            android:hint="@string/hint_codigo_tarjeta" />
+
+        <EditText
+            android:id="@+id/editSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TEXT"
+            android:hint="@string/hint_saldo"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+</ScrollView>

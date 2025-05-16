@@ -1,0 +1,274 @@
+<resources>
+    <string name="app_name">Card Fast</string>
+    <string name="name_text">Card Fast</string>
+    <string name="slogan_text">Recarga rápido. Administra fácil. Vive sin límites</string>
+
+    <string name="drawer_close">Close Drawer</string>
+    <string name="drawer_open">Open Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Mensajes de Login -->
+    <string name="mensaje_completar_campos">Completa todos los campos</string>
+    <string name="mensaje_bienvenida">Bienvenido, %1$s</string>
+    <string name="mensaje_credenciales_incorrectas">Credenciales incorrectas</string>
+
+    <!-- Canal de notificación -->
+    <string name="canal_recargas_nombre">Recargas</string>
+    <string name="canal_recargas_descripcion">Notificaciones de recargas exitosas</string>
+
+    <!-- NOTIFICACION SALDO -->
+    <string name="titulo_notificacion_saldo">Configuración de Notificación</string>
+    <string name="hint_cantidad_minima">Cantidad mínima (S/.)</string>
+    <string name="btn_guardar_configuracion">Guardar</string>
+
+    <!-- DETALLE TARJETA -->
+    <string name="titulo_tarjeta">Tarjeta </string>
+    <string name="codigo_tarjeta">Código:</string>
+    <string name="saldo">Saldo: S/ </string>
+    <string name="txtRecarga">Recargar Saldo</string>
+    <string name="pagar">Pagar</string>
+    <string name="yape">YAPE</string>
+    <string name="mostrar_ocultar_saldo">Mostrar u ocultar saldo</string>
+    <string name="monto_en_soles">Monto en S/.</string>
+
+    <!-- PAGO FINAL -->
+    <string name="hint_celular_yape">Ingresa tu celular Yape</string>
+    <string name="hint_codigo_aprobacion">Código de aprobación</string>
+    <string name="texto_ayuda">Encuéntralo en el menú de Yape</string>
+    <string name="texto_yapear">Yapear S/ </string>
+    <string name="descripcion_logo">Logo</string>
+
+    <!-- RECARGA SALDO -->
+    <string name="texto_saldo_actual">Saldo actual: S/ </string>
+    <string name="hint_monto_recarga">Monto a recargar</string>
+    <string name="texto_yape">Yape</string>
+    <string name="texto_continuar_pago">Continuar</string>
+
+    <!-- RECIBO -->
+    <string name="texto_recibo_titulo">Recibo de Pago</string>
+    <string name="texto_recibo_fecha">Fecha: </string>
+    <string name="texto_recibo_monto">Monto: S/ </string>
+    <string name="texto_recibo_telefono">Teléfono: </string>
+    <string name="texto_recibo_metodo">Método: </string>
+    <string name="texto_recibo_tarjeta">Tarjeta: </string>
+    <string name="texto_finalizar">Finalizar</string>
+
+    <!-- Cadenas para el recibo -->
+    <string name="dialogo_recibo_fecha">Fecha: %1$s</string>
+    <string name="dialogo_recibo_monto">Monto: S/ %1$.2f</string>
+    <string name="dialogo_recibo_telefono">Teléfono: %1$s</string>
+    <string name="dialogo_recibo_metodo">Método: Yape</string>
+    <string name="dialogo_recibo_tarjeta">Tarjeta: %1$s</string>
+    <string name="dialogo_recibo_finalizar">Finalizar</string>
+
+    <!-- HOME -->
+    <string name="bienvenido">BIENVENIDO</string>
+    <string name="descripcion_card_fast">Card Fast te permite gestionar tus tarjetas de manera rápida y segura, facilitando pagos y recargas al instante.</string>
+
+    <!-- MIS RECARGAS -->
+    <string name="mis_recargas">Mis Recargas</string>
+
+    <!-- PERFIL -->
+    <string name="settings">Configuración</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="night_mode">Modo nocturno</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="private_account">Cuenta privada</string>
+    <string name="txtConfigSaldo">Configurar notificación de saldo</string>
+    <string name="security_privacy">Seguridad y privacidad</string>
+    <string name="text_size">Tamaño del texto</string>
+    <string name="languages">Idiomas</string>
+    <string name="send_message">Envíanos un mensaje</string>
+    <string name="about_us">Sobre nosotros</string>
+    <string name="faqs">Preguntas frecuentes</string>
+    <string name="log_out">Cerrar sesión</string>
+
+    <!-- PerfilFragment: Encabezados -->
+    <string name="titulo_perfil">Perfil</string>
+    <string name="nombre_usuario">Nombre del usuario</string>
+
+    <!-- PerfilFragment: Botones -->
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_cerrar_sesion">Cerrar sesión</string>
+    <string name="btn_EditarPerfil">Editar Perfil</string>
+
+    <!-- PerfilFragment: Diálogo de cerrar sesión -->
+    <string name="titulo_cerrar_sesion">Cerrar sesión</string>
+    <string name="mensaje_cerrar_sesion">¿Estás seguro de que deseas cerrar sesión?</string>
+    <string name="opcion_si">Sí</string>
+    <string name="opcion_no">No</string>
+
+    <!-- PerfilFragment: Confirmaciones -->
+    <string name="mensaje_datos_guardados">Datos guardados correctamente</string>
+    <string name="mensaje_sesion_cerrada">Sesión cerrada exitosamente</string>
+
+    <!-- TARJETA -->
+    <string name="fab_add_description">Agregar</string>
+    <string name="fab_edit_description">Editar</string>
+    <string name="fab_delete_description">Eliminar</string>
+
+    <!-- ITEM TARJETA -->
+    <string name="btn_view_more">Ver más ➔</string>
+
+    <!-- ITEM RECARGA -->
+    <string name="txt_monto">Monto</string>
+    <string name="txt_metodo">Método</string>
+    <string name="txt_fecha">Fecha</string>
+
+    <!-- MOSTRAR DIALOG -->
+    <string name="hint_nombre_tarjeta">Nombre de la tarjeta</string>
+    <string name="hint_codigo_tarjeta">Código de tarjeta</string>
+    <string name="hint_saldo">Saldo</string>
+
+    <!-- IDIOMA -->
+    <string name="seleccionar_idioma">Seleccionar Idioma</string>
+    <string name="txtEspanol">Español</string>
+    <string name="txtIngles">Inglés</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <!-- LOGIN -->
+
+    <string name="titulo_login">Iniciar Sesión</string>
+    <string name="hint_correo">Correo</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="recordar_sesion">Recordar sesión</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesión</string>
+    <string name="registro_texto">¿No tienes cuenta? Regístrate</string>
+
+    <!-- REGISTRO -->
+    <string name="regLblTitulo">Crear Cuenta</string>
+    <string name="regTxtDni">DNI</string>
+    <string name="regTxtNombre">Nombre</string>
+    <string name="regTxtApellido">Apellido</string>
+    <string name="regTxtFechaNac">Fecha de Nacimiento</string>
+    <string name="regTxtSexo">Sexo</string>
+    <string name="regRbtFemenino">Femenino</string>
+    <string name="regRbtMasculino">Masculino</string>
+    <string name="regRbtSinDefinir">Sin definir</string>
+    <string name="regTxtCorreo">Correo electrónico</string>
+    <string name="regTxtClave">Contraseña</string>
+    <string name="regTxtClave2">Repetir contraseña</string>
+    <string name="regCboDistrito">Distrito</string>
+    <string name="regTxtTerminos">Acepto los términos y condiciones</string>
+    <string name="regBtnCrear">Crear</string>
+    <string name="regBtnRegresar">Regresar</string>
+
+    <!-- MENÚ -->
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_tarjetas">Tarjetas</string>
+    <string name="menu_ubicaciones">Ubicaciones</string>
+    <string name="menu_mis_recargas">Mis Recargas</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_compartir">Compartir</string>
+    <string name="menu_calificar">Calificar</string>
+    <string name="menu_comunicar">Comunicar</string>
+    <string name="menu_perfil_titulo">Perfil</string>
+    <string name="menu_acerca_de">Acerca de</string>
+
+    <!-- NUEVOS STRINGS PARA DIÁLOGOS Y NOTIFICACIONES DINÁMICAS -->
+
+    <string name="titulo_nueva_tarjeta">Nueva Tarjeta</string>
+    <string name="titulo_editar_tarjeta">Editar Tarjeta</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="toast_campos_obligatorios">Por favor, completa todos los campos obligatorios</string>
+    <string name="toast_saldo_invalido">Monto de saldo inválido</string>
+    <string name="boton_cancelar">Cancelar</string>
+
+    <!-- Detalle tarjeta -->
+    <string name="codigo">Código</string>
+    <string name="saldo_oculto">S/ ****</string>
+    <string name="saldo_mostrado">S/ %1$.2f</string>
+
+    <!-- Recarga saldo -->
+    <string name="saldo_actual">Saldo actual: S/ %1$.2f</string>
+    <string name="ingrese_monto_valido">Ingrese un monto válido</string>
+    <string name="seleccionar_metodo_pago">Seleccione un método de pago</string>
+
+    <!-- Pago final -->
+    <string name="yapear_monto">Yapear S/ %1$.2f</string>
+    <string name="ingrese_numero_yape">Ingrese su número Yape</string>
+    <string name="numero_invalido">Número inválido (9 dígitos)</string>
+    <string name="ingrese_codigo_aprobacion">Ingrese el código de aprobación</string>
+    <string name="codigo_invalido">Código inválido (entre 4 a 6 dígitos)</string>
+    <string name="monto_mayor_que_0">El monto debe ser mayor a 0</string>
+
+    <!-- Notificación -->
+    <string name="recarga_exitosa">Recarga exitosa</string>
+    <string name="recarga_mensaje">Has recargado S/ %1$.2f a la tarjeta %2$s</string>
+
+    <!-- REGISTRO ACTIVITY -->
+    <string name="error_dni">El DNI debe tener 8 dígitos</string>
+    <string name="error_nombre">Ingresa tu nombre</string>
+    <string name="error_apellido">Ingresa tu apellido</string>
+    <string name="error_fecha_nac">Selecciona tu fecha de nacimiento</string>
+    <string name="error_correo">Correo inválido</string>
+    <string name="error_clave">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="error_clave_diferente">Las contraseñas no coinciden</string>
+    <string name="error_terminos">Debes aceptar los términos y condiciones</string>
+    <string name="toast_registro_exitoso">Usuario registrado correctamente</string>
+    <string name="toast_registro_error">Error al registrar usuario</string>
+
+    <!-- Notification Messages -->
+    <string name="mensaje_saldo_bajo">Saldo bajo en:</string>
+    <string name="mensaje_tarjetas_bajo_saldo">Tarjetas con saldo bajo</string>
+
+    <!-- RECARGA ADAPTER -->
+    <string name="txt_recarga_tarjeta">Tarjeta: %1$s</string>
+    <string name="txt_recarga_monto">Monto: S/ %1$.2f</string>
+    <string name="txt_recarga_metodo">Método: %1$s</string>
+    <string name="txt_recarga_fecha">Fecha: %1$s</string>
+
+    <!-- NOTIFICACIÓN DE SALDO - ACTIVITY -->
+    <string name="mensaje_ingresa_cantidad">Por favor, ingresa una cantidad mínima.</string>
+    <string name="mensaje_cantidad_invalida">Cantidad inválida</string>
+    <string name="mensaje_configuracion_guardada">Configuración guardada</string>
+
+    <!-- CANAL NOTIFICACIÓN -->
+    <string name="canal_saldo_id">saldo_bajo</string>
+    <string name="canal_saldo_nombre">Notificaciones de saldo</string>
+    <string name="canal_saldo_descripcion">Te avisa cuando una tarjeta tiene saldo bajo.</string>
+
+
+    <string-array name="distritos_array">
+        <item>Seleccionar distrito</item>
+        <item>Miraflores</item>
+        <item>San Isidro</item>
+        <item>La Molina</item>
+        <item>Surco</item>
+    </string-array>
+
+    <!-- FRECUENCIAS NOTIFICACIONES -->
+    <string-array name="frecuencias_notificacion">
+        <item>Cada 1 minuto</item>
+        <item>Cada 5 minutos</item>
+        <item>Cada 1 hora</item>
+        <item>Cada día</item>
+    </string-array>
+
+    <!-- ACERCA DE -->
+    <string name="app_version">Versión 1.0.0</string>
+    <string name="app_developer">Desarrollado por: Los Power Rangers</string>
+    <string name="app_email">Email: contacto@cardfast.com</string>
+    <string name="app_website">Web: www.cardfast.pe</string>
+    <string name="btn_contact_support">Contactar Soporte</string>
+    <string name="follow_us">Síguenos en redes sociales</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="youtube">YouTube</string>
+
+    <!-- COMPARTIR -->
+    <string name="share_message">¡Comparte la app con tus amigos!</string>
+    <string name="btn_share_app">Compartir App</string>
+
+    <!-- CALIFICACION -->
+    <string name="rate_question">¿Qué te pareció nuestra app?</string>
+    <string name="rate_hint">Escribe un comentario (opcional)</string>
+    <string name="btn_send_whatsapp">Enviar por WhatsApp</string>
+
+    <!-- EDITAR PERFIL -->
+    <string name="regTxtClaveActual">Contraseña actual</string>
+    <string name="regTxtClaveNueva">Nueva contraseña</string>
+</resources>
