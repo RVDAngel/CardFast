@@ -308,7 +308,6 @@ public class TarjetaFragment extends BaseAppCompatFragment implements View.OnCli
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
-                                Toast.makeText(getContext(), "Error al procesar la respuesta", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else{
@@ -587,7 +586,6 @@ public class TarjetaFragment extends BaseAppCompatFragment implements View.OnCli
                                 }
                             } catch (Exception e) {
                                 e.printStackTrace();
-                                Toast.makeText(getContext(), "Error procesando respuesta", Toast.LENGTH_SHORT).show();
                             }
                         } else {
                             Toast.makeText(getContext(), "ERROR: " + statusCode, Toast.LENGTH_SHORT).show();

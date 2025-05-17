@@ -110,7 +110,7 @@ public class MainActivity extends BaseAppCompatActivity {
                     drawerLayout.closeDrawer(GravityCompat.START);
                 }
                 else if(item.getItemId() == R.id.nav_profile){
-                    replaceFragment(PerfilFragment.newInstance(nombre, correo, fotoBase64));
+                    replaceFragment(PerfilFragment.newInstance(nombre, correo));
                     drawerLayout.closeDrawer(GravityCompat.START);
                 }
                 else if(item.getItemId() == R.id.nav_card){

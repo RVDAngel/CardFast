@@ -189,7 +189,6 @@ public class RegistroActivity extends BaseAppCompatActivity implements View.OnCl
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
-                        Toast.makeText(getApplicationContext(), "Respuesta inválida del servidor.", Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{

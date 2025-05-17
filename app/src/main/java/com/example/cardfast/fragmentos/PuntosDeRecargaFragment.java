@@ -268,7 +268,6 @@ public class PuntosDeRecargaFragment extends BaseAppCompatFragment {
 
                     } catch (JSONException e) {
                         e.printStackTrace();
-                        Toast.makeText(getContext(), "Error al parsear los datos.", Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{

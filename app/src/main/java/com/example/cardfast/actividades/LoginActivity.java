@@ -185,7 +185,6 @@ public class LoginActivity extends BaseAppCompatActivity implements View.OnClick
                         Toast.makeText(LoginActivity.this, getString(R.string.mensaje_bienvenida, usuario.getNombre()), Toast.LENGTH_SHORT).show();
                         irAPantallaPrincipal();
                     } catch (JSONException e) {
-                        Toast.makeText(LoginActivity.this, getString(R.string.mensaje_credenciales_incorrectas), Toast.LENGTH_SHORT).show();
                         e.printStackTrace();
                     } catch (ParseException e) {
                         throw new RuntimeException(e);

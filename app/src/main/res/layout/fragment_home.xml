@@ -5,39 +5,44 @@
     android:layout_height="match_parent"
     tools:context=".fragmentos.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center">
-        <ImageView
-            android:layout_width="350dp"
-            android:layout_height="350dp"
-            android:layout_marginTop="70dp"
-            android:layout_gravity="center"
-            android:src="@drawable/home"/>
-        <TextView
-            android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/bienvenido"
-            style="@style/TEXT"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal"/>
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
 
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="@string/descripcion_card_fast"
-            android:textSize="15sp"
-            style="@style/TEXT"
-            android:layout_marginTop="15dp"
-            android:textAlignment="center"
-            android:lineSpacingExtra="3dp"
-            android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/home" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bienvenido"
+                style="@style/TEXT"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
 
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/descripcion_card_fast"
+                android:textSize="15sp"
+                style="@style/TEXT"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:lineSpacingExtra="3dp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

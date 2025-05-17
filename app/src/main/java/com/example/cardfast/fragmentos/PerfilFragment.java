@@ -1,5 +1,6 @@
 package com.example.cardfast.fragmentos;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -51,7 +52,6 @@ public class PerfilFragment extends BaseAppCompatFragment implements View.OnClic
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_NOMBRE = "nombre_usuario";
     private static final String ARG_CORREO = "correo_usuario";
-    private static final String ARG_FOTO = "foto_usuario";
 
     // TODO: Rename and change types of parameters
     private String nombreUsuario;
@@ -71,12 +71,11 @@ public class PerfilFragment extends BaseAppCompatFragment implements View.OnClic
      * @return A new instance of fragment PerfilFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static PerfilFragment newInstance(String nombre, String correo, String fotoBase64) {
+    public static PerfilFragment newInstance(String nombre, String correo) {
         PerfilFragment fragment = new PerfilFragment();
         Bundle args = new Bundle();
         args.putString(ARG_NOMBRE, nombre);
         args.putString(ARG_CORREO, correo);
-        args.putString(ARG_FOTO, fotoBase64);
         fragment.setArguments(args);
         return fragment;
     }
@@ -87,7 +86,6 @@ public class PerfilFragment extends BaseAppCompatFragment implements View.OnClic
         if (getArguments() != null) {
             nombreUsuario = getArguments().getString(ARG_NOMBRE);
             correoUsuario = getArguments().getString(ARG_CORREO);
-            fotoBase64 = getArguments().getString(ARG_FOTO);
         }
     }
 
@@ -107,12 +105,6 @@ public class PerfilFragment extends BaseAppCompatFragment implements View.OnClic
 
         txtNombreUsuario.setText(nombreUsuario);
         txtCorreoUsuario.setText(correoUsuario);
-        if (fotoBase64 != null && !fotoBase64.isEmpty()) {
-            Bitmap bitmap = base64ToBitmap(fotoBase64);
-            if (bitmap != null) {
-                imgFotoPerfil.setImageBitmap(bitmap);
-            }
-        }
 
         logoutLayout = view.findViewById(R.id.logoutLayout);
         languageLayout = view.findViewById(R.id.languageLayout);
@@ -193,12 +185,12 @@ public class PerfilFragment extends BaseAppCompatFragment implements View.OnClic
             db = new BaseDatos(requireContext());
         }
 
-        String correo = preferencias.getCorreoUsuario();
-        String nombreCompleto = db.obtenerNombreUsuario(correo);
-        String fotoBase64 = preferencias.getFotoPerfil();
+        correoUsuario = preferencias.getCorreoUsuario();
+        nombreUsuario = db.obtenerNombreUsuario(correoUsuario);
+        fotoBase64 = preferencias.getFotoPerfil();
 
-        txtNombreUsuario.setText(nombreCompleto != null ? nombreCompleto : "Usuario");
-        txtCorreoUsuario.setText(correo);
+        txtNombreUsuario.setText(nombreUsuario != null ? nombreUsuario : "Usuario");
+        txtCorreoUsuario.setText(correoUsuario);
 
         if (fotoBase64 != null && !fotoBase64.isEmpty()) {
             Bitmap bitmap = base64ToBitmap(fotoBase64);
@@ -248,7 +240,9 @@ public class PerfilFragment extends BaseAppCompatFragment implements View.OnClic
         });
 
         builder.setNegativeButton(getString(R.string.cancelar), null);
-        builder.show();
+        androidx.appcompat.app.AlertDialog dialog = builder.show();
+        dialog.getButton(AlertDialog.BUTTON_POSITIVE).setAllCaps(false);
+        dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setAllCaps(false);
     }
 
     private void setLocale(String lang) {
@@ -266,13 +260,17 @@ public class PerfilFragment extends BaseAppCompatFragment implements View.OnClic
     }
 
     private void mostrarDialogoConfirmacion() {
-        new androidx.appcompat.app.AlertDialog.Builder(requireContext())
+        androidx.appcompat.app.AlertDialog dialog = new androidx.appcompat.app.AlertDialog.Builder(requireContext())
                 .setTitle(getString(R.string.titulo_cerrar_sesion))
                 .setMessage(getString(R.string.mensaje_cerrar_sesion))
                 .setIcon(R.drawable.baseline_exit_to_app_24)
-                .setPositiveButton(getString(R.string.opcion_si), (dialog, which) -> cerrarSesionConAnimacion())
+                .setPositiveButton(getString(R.string.opcion_si), (dialogInterface, which) -> cerrarSesionConAnimacion())
                 .setNegativeButton(getString(R.string.opcion_no), null)
-                .show();
+                .create();
+
+        dialog.show();
+        dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_POSITIVE).setAllCaps(false);
+        dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_NEGATIVE).setAllCaps(false);
     }
 
     private void cerrarSesionConAnimacion() {
